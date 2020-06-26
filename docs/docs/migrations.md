@@ -149,7 +149,7 @@ We've already added code to remove the person table in the `down` function.
 - Backward migrations can be run run with `yarn rollback`
 - Confirm the tables you have created has now been removed
 
-#### NOTES
+#### Notes
 
 - If you're running into an error when rolling back, remember that tables should be removed in the opposite order in which they are created, otherwise dependencies prevents the dropping of tables.
 
@@ -160,3 +160,7 @@ migration failed with error: drop table "person" - cannot drop table person beca
 - To prevent unforeseen migration failures in future, always ensure the tables you add in `up` are removed in `down` (this happens more than you think!).
 - Always test forward and backwards migrations thoroughly before opening a PR.
 - Stuck? `docker-compose down -v` to remove all volumes and start again.
+
+#### References
+
+- https://knexjs.org/

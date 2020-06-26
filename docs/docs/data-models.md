@@ -56,3 +56,8 @@ export class Person extends Model {
 - Objection is (mostly) smart enough to tell you when you've specified the wrong types of relationships, but this is can be a likely bug source.
 - This page always comes in handy when specifying relations between objection classes.
 - Types of all relations have to be added to the top of the class.
+
+#### References
+
+- https://vincit.github.io/objection.js/
+- http://blogs.tedneward.com/post/the-vietnam-of-computer-science/
