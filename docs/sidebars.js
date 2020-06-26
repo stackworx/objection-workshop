@@ -4,6 +4,7 @@ module.exports = {
     'migrations',
     'data-models',
     'create-and-fetch',
+    'seeds',
     'adding-context',
   ],
 };

@@ -1,5 +1,5 @@
 ---
-id: Adding seeds
+id: seeds
 title: Adding seeds
 ---
 
