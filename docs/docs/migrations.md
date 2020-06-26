@@ -19,7 +19,7 @@ Conventions:
 
 Create a file `db.ts` in the source root of your folder and copy the following contents:
 
-```typescript
+```typescript title="src/db.ts"
 import Knex from 'knex';
 import {knexSnakeCaseMappers, Model} from 'objection';
 
@@ -58,7 +58,7 @@ which creates a _knexfile.js_ containing information about the files relating to
 
 This file is used to tell knex what migrations to execute in specific environments (denoted by NODE_ENV). Below you can see our migration config for `NODE_ENV=development`
 
-```javascript
+```javascript title="knexfile.js"
 ///
 const {knexSnakeCaseMappers} = require('objection');
 const {connection} = require('./src/db');
