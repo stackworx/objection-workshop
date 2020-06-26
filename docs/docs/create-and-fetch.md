@@ -3,7 +3,7 @@ id: create-and-fetch
 title: Create and fetch services
 ---
 
-Let's use this model we built to perform to basic operations on a `Person`. We'll create a class to encompass this logic
+Let's use this model we built to perform to basic operations on a `Person`. We'll create a PersonService class with stati methods to encompass this logic
 
 ### 1. Create
 
