@@ -32,11 +32,11 @@ export class Person extends Model {
     return {
       name: {
         relation: Model.HasManyRelation,
-        modelClass: Person,
+        modelClass: Pet,
         join: {
           from: 'person.id',
           //knexSnakeCaseMappers plugin enables snakecase
-          to: 'person.parentId',
+          to: 'pet.personId',
         },
       },
     };
