@@ -152,6 +152,11 @@ We've already added code to remove the person table in the `down` function.
 #### NOTES
 
 - If you're running into an error when rolling back, remember that tables should be removed in the opposite order in which they are created, otherwise dependencies prevents the dropping of tables.
+
+```
+migration failed with error: drop table "person" - cannot drop table person because other objects depend on it
+```
+
 - To prevent unforeseen migration failures in future, always ensure the tables you add in `up` are removed in `down` (this happens more than you think!).
 - Always test forward and backwards migrations thoroughly before opening a PR.
 - Stuck? `docker-compose down -v` to remove all volumes and start again.
