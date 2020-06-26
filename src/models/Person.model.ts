@@ -1,8 +1,14 @@
-import {Model} from 'objection';
+import { Model } from 'objection';
 
 export class Person extends Model {
-  firstName!: string;
-  children!: Person[];
+  // every column (property) in the table should be typed
+  id!: number
+  name!: string;
+  age!: number
+  surname!: string;
+  // but their relations to other entities as well
+  pets: any
+  //TODO: add type pet relation type
 
   static get tableName() {
     return 'person';
@@ -10,7 +16,7 @@ export class Person extends Model {
 
   static get relationMappings() {
     return {
-      children: {
+      name: {
         relation: Model.HasManyRelation,
         modelClass: Person,
         join: {
@@ -21,3 +27,5 @@ export class Person extends Model {
     };
   }
 }
+
+//footnote: valuable builtinmethods can handle important checks autonomously without having to deal with it everywhere
